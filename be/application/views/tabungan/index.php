@@ -16,9 +16,9 @@
                         <form name="submit-to-google-sheet">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="nama" class="control-label">Nama</label>
+                                    <label for="nit" class="control-label">NIT</label>
                                     <div class="form-group">
-                                        <input type="text" name="nama" class="form-control" id="nama" required />
+                                        <input type="text" name="nit" class="form-control" id="nit" required />
                                     </div>
                                 </div>
                             </div>

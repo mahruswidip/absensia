@@ -55,6 +55,12 @@ The above copyright notice and this permission notice shall be included in all c
                             <p>Tabungan</p>
                         </a>
                     </li>                    
+                    <li class="nav-item <?php if($this->uri->uri_string() == 'absensi/index') { echo 'active'; } ?>">
+                        <a class="nav-link" href="<?php echo site_url(''); ?>absensi/index">
+                            <i class="material-icons">book</i>
+                            <p>Tabungan</p>
+                        </a>
+                    </li>                    
                     <li class="nav-item active-pro ">
                         <a class="nav-link" href="<?php echo site_url('login/logout'); ?>">
                             <i class="material-icons">archive</i>
