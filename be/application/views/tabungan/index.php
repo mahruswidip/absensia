@@ -16,7 +16,7 @@
                         <form name="submit-to-google-sheet">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="nit" class="control-label">NIT</label>
+                                    <label for="nit" class="control-label">NIT (Nomor Induk Tabungan)</label>
                                     <div class="form-group">
                                         <input type="text" name="nit" class="form-control" id="nit" required />
                                     </div>
