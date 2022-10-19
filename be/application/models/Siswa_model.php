@@ -4,7 +4,7 @@
  * www.crudigniter.com
  */
  
-class Petani_model extends CI_Model
+class Siswa_model extends CI_Model
 {
     function __construct()
     {

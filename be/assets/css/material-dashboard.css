@@ -12,6 +12,12 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
  */
+ input[type=date]:required:invalid::-webkit-datetime-edit {
+  color: transparent!important;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
 /*     brand Colors              */
 .card {
   font-size: .875rem;
@@ -16856,7 +16862,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 .table>tfoot>tr>td {
   padding: 12px 8px;
   vertical-align: middle;
-  border-color: #ddd;
+  /* border-color: #ddd; */
 }
 
 .table thead tr th {

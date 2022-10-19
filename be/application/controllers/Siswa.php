@@ -4,11 +4,11 @@
  * www.crudigniter.com
  */
  
-class Petani extends CI_Controller{
+class Siswa extends CI_Controller{
     function __construct()
     {
         parent::__construct();
-        $this->load->model('Petani_model');
+        $this->load->model('Siswa_model');
     } 
 
     /*
@@ -21,12 +21,12 @@ class Petani extends CI_Controller{
         
         $config = $this->config->item('pagination');
         $config['base_url'] = site_url('petani/index?');
-        $config['total_rows'] = $this->Petani_model->get_all_petani_count();
+        $config['total_rows'] = $this->Siswa_model->get_all_petani_count();
         $this->pagination->initialize($config);
 
-        $data['petani'] = $this->Petani_model->get_all_petani($params);
+        $data['petani'] = $this->Siswa_model->get_all_petani($params);
         
-        $data['_view'] = 'petani/index';
+        $data['_view'] = 'siswa/index';
         $this->load->view('layouts/main',$data);
     }
 
@@ -46,7 +46,7 @@ class Petani extends CI_Controller{
 				'alamat' => $this->input->post('alamat'),
             );
             
-            $petani_id = $this->Petani_model->add_petani($params);
+            $petani_id = $this->Siswa_model->add_petani($params);
             redirect('petani/index');
         }
         else
@@ -62,7 +62,7 @@ class Petani extends CI_Controller{
     function edit($id_petani)
     {   
         // check if the petani exists before trying to edit it
-        $data['petani'] = $this->Petani_model->get_petani($id_petani);
+        $data['petani'] = $this->Siswa_model->get_petani($id_petani);
         
         if(isset($data['petani']['id_petani']))
         {
@@ -77,7 +77,7 @@ class Petani extends CI_Controller{
 					'alamat' => $this->input->post('alamat'),
                 );
 
-                $this->Petani_model->update_petani($id_petani,$params);            
+                $this->Siswa_model->update_petani($id_petani,$params);            
                 redirect('petani/index');
             }
             else
@@ -95,12 +95,12 @@ class Petani extends CI_Controller{
      */
     function remove($id_petani)
     {
-        $petani = $this->Petani_model->get_petani($id_petani);
+        $petani = $this->Siswa_model->get_petani($id_petani);
 
         // check if the petani exists before trying to delete it
         if(isset($petani['id_petani']))
         {
-            $this->Petani_model->delete_petani($id_petani);
+            $this->Siswa_model->delete_petani($id_petani);
             redirect('petani/index');
         }
         else

@@ -4,7 +4,7 @@
             <div class="card-header card-header-primary">
                 <div class="row justify-content-between">
                     <div class="col-md-9">
-                        <h3 class="card-title ">Data Petani</h3>
+                        <h3 class="card-title ">Data Siswa</h3>
                     </div>
                     <div class="col-auto">
                         <a href="<?php echo site_url('petani/add'); ?>" class="btn btn-success"><span class="fa fa-plus"></span></a>
@@ -15,7 +15,7 @@
                 <div class="table-responsive">
                     <table class="table">
                         <thead class=" text-primary">
-                            <th>Nama Petani</th>
+                            <th>Nama</th>
                             <th>Jenis Kelamin</th>
                             <th>Tanggal Lahir</th>
                             <th>NIK</th>

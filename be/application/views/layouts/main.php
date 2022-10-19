@@ -18,7 +18,7 @@ The above copyright notice and this permission notice shall be included in all c
     <link rel="icon" type="image/png" href="<?php echo site_url('assets/'); ?>img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        SICANTIK
+        SISISWA
     </title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
@@ -33,7 +33,7 @@ The above copyright notice and this permission notice shall be included in all c
     <div class="wrapper ">
         <div class="sidebar" data-color="green" data-background-color="white" data-image="<?php echo site_url('assets/'); ?>img/sidebar-1.jpg">
             <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-                    SICANTIK
+                    ADMIN
                 </a></div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
@@ -43,42 +43,18 @@ The above copyright notice and this permission notice shall be included in all c
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li class="nav-item <?php if($this->uri->uri_string() == 'petani/index') { echo 'active'; } ?>">
-                        <a class="nav-link" href="<?php echo site_url(''); ?>petani/index">
+                    <li class="nav-item <?php if($this->uri->uri_string() == 'siswa/index') { echo 'active'; } ?>">
+                        <a class="nav-link" href="<?php echo site_url(''); ?>siswa/index">
                             <i class="material-icons">person</i>
-                            <p>Petani</p>
+                            <p>Siswa</p>
                         </a>
-                    </li>
-                    <li class="nav-item <?php if($this->uri->uri_string() == 'komoditas/index') { echo 'active'; } ?>">
-                        <a class="nav-link" href="<?php echo site_url(''); ?>komoditas/index">
-                            <i class="material-icons">content_paste</i>
-                            <p>Komoditas</p>
+                    </li>                    
+                    <li class="nav-item <?php if($this->uri->uri_string() == 'tabungan/index') { echo 'active'; } ?>">
+                        <a class="nav-link" href="<?php echo site_url(''); ?>tabungan/index">
+                            <i class="material-icons">book</i>
+                            <p>Tabungan</p>
                         </a>
-                    </li>
-                    <li class="nav-item <?php if($this->uri->uri_string() == 'luasan/index') { echo 'active'; } ?>">
-                        <a class="nav-link" href="<?php echo site_url(''); ?>luasan/index">
-                            <i class="material-icons">library_books</i>
-                            <p>Luasan</p>
-                        </a>
-                    </li>
-                    <li class="nav-item <?php if($this->uri->uri_string() == 'tanam/index') { echo 'active'; } ?>">
-                        <a class="nav-link" href="<?php echo site_url(''); ?>tanam/index">
-                            <i class="material-icons">bubble_chart</i>
-                            <p>Tanam</p>
-                        </a>
-                    </li>
-                    <li class="nav-item <?php if($this->uri->uri_string() == 'panen/index') { echo 'active'; } ?>">
-                        <a class="nav-link" href="<?php echo site_url(''); ?>panen/index">
-                            <i class="material-icons">location_ons</i>
-                            <p>Panen</p>
-                        </a>
-                    </li>
-                    <li class="nav-item <?php if($this->uri->uri_string() == 'jurnal_kegiatan/index') { echo 'active'; } ?>">
-                        <a class="nav-link" href="<?php echo site_url(''); ?>jurnal_kegiatan/index">
-                            <i class="material-icons">notifications</i>
-                            <p>Jurnal Kegiatan</p>
-                        </a>
-                    </li>
+                    </li>                    
                     <li class="nav-item active-pro ">
                         <a class="nav-link" href="<?php echo site_url('login/logout'); ?>">
                             <i class="material-icons">archive</i>

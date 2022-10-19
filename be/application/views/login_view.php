@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SICANTIK | Masuk</title>
+  <title>SISISWA | Masuk</title>
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -24,9 +24,9 @@
             <div class="card-body">
               <div class="brand-wrapper">
                 <h1 style="font-weight: 800;">
-                  <span style="color: #2eca6a;">SI</span>CANTIK<br>
+                  <span style="color: #2eca6a;">SI</span>SISWA<br>
                 </h1>
-                <span>SISTEM CATATAN PETANI ORGANIK</span>
+                <span>SISTEM CATATAN SISWA</span>
               </div>
               <p class="login-card-description">Masuk untuk melanjutkan</p>
               <form action="<?php echo site_url('login/auth'); ?>" method="post">
