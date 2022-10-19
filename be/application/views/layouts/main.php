@@ -52,13 +52,13 @@ The above copyright notice and this permission notice shall be included in all c
                     <li class="nav-item <?php if($this->uri->uri_string() == 'tabungan/index') { echo 'active'; } ?>">
                         <a class="nav-link" href="<?php echo site_url(''); ?>tabungan/index">
                             <i class="material-icons">book</i>
-                            <p>Tabungan</p>
+                            <p>Etabungan</p>
                         </a>
                     </li>                    
-                    <li class="nav-item <?php if($this->uri->uri_string() == 'absensi/index') { echo 'active'; } ?>">
-                        <a class="nav-link" href="<?php echo site_url(''); ?>absensi/index">
-                            <i class="material-icons">book</i>
-                            <p>Tabungan</p>
+                    <li class="nav-item <?php if($this->uri->uri_string() == 'absen/index') { echo 'active'; } ?>">
+                        <a class="nav-link" href="<?php echo site_url(''); ?>absen/index">
+                            <i class="material-icons">insert_chart</i>
+                            <p>Eabsen</p>
                         </a>
                     </li>                    
                     <li class="nav-item active-pro ">
