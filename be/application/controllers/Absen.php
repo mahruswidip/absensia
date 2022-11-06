@@ -41,25 +41,6 @@ class Absen extends CI_Controller
 		});";
         return $messageAlert;
     }
-
-    // function add_scan()
-    // {
-    //     $result_code = $this->input->post('nik');
-    //     $get_jamaah = $this->Scan_model->get_jamaah($result_code);
-    //     if (isset($_POST) && count($_POST) > 0) {
-    //         $params = array(
-    //             'id_jamaah' => $get_jamaah['id_jamaah'],
-    //             'nik' => $get_jamaah['nik'],
-    //             'nama_jamaah' => $get_jamaah['nama_jamaah'],
-    //             'kehadiran' => 'Tidak Hadir / Belum Hadir',
-    //         );
-    //         $this->Scan_model->add_scan($params);
-    //     } else {
-    //         $data['_view'] = 'jamaah/add';
-    //         $this->load->view('layouts/main', $data);
-    //     }
-    // }
-
     function cek_id()
     {
         $result_code = $this->input->post('uuid');
@@ -80,54 +61,6 @@ class Absen extends CI_Controller
             $this->session->set_flashdata('error', 'Jamaah Tidak Ditemukan');
             redirect('scan/index');
         }
-        // $result_code = $this->input->post('nik');
-        // $tgl = date('Y-m-d');
-        // $jam_msk = date('h:i:s');
-        // $jam_klr = date('h:i:s');
-        // $get_jamaah = $this->Scan_model->get_jamaah($result_code);
-        // if (isset($_POST) && count($_POST) > 0) {
-        //     $params = array(
-        //         'id_jamaah' => $get_jamaah['id_jamaah'],
-        //         'nik' => $get_jamaah['nik'],
-        //         'nama_jamaah' => $get_jamaah['nama_jamaah'],
-        //         'kehadiran' => 'Hadir',
-        //     );
-        //     $this->session->set_flashdata('nama', $params['nama_jamaah']);
-        //     $this->session->set_flashdata('jk', $params['jenis_kelamin']);
-        //     $this->Scan_model->add_scan($params);
-        //     redirect('scan/index');
-        // } else {
-        //     $data['_view'] = 'scan/index';
-        //     $this->load->view('layouts/main', $data);
-        // }
-
-        // if (!$cek_id) {
-        // 	$this->session->set_flashdata('messageAlert', $this->messageAlert('error', 'absen gagal data QR tidak ditemukan'));
-        // 	redirect('scan/index');
-        // } elseif ($cek_kehadiran && $cek_kehadiran->jam_msk != '00:00:00' && $cek_kehadiran->jam_klr == '00:00:00' && $cek_kehadiran->id_status == 1) {
-        // 	$data = array(
-        // 		'jam_klr' => $jam_klr,
-        // 		'id_status' => 2,
-        // 	);
-        // 	$this->Scan_model->absen_pulang($result_code, $data);
-        // 	$this->session->set_flashdata('messageAlert', $this->messageAlert('success', 'absen pulang'));
-        // 	redirect('scan/index');
-        // } elseif ($cek_kehadiran && $cek_kehadiran->jam_msk != '00:00:00' && $cek_kehadiran->jam_klr != '00:00:00' && $cek_kehadiran->id_status == 2) {
-        // 	$this->session->set_flashdata('messageAlert', $this->messageAlert('warning', 'sudah absen'));
-        // 	redirect('scan/index');
-        // 	return false;
-        // } else {
-        // 	$data = array(
-        // 		'nik' => $result_code,
-        // 		'tgl' => $tgl,
-        // 		'jam_msk' => $jam_msk,
-        // 		'id_khd' => 1,
-        // 		'id_status' => 1,
-        // 	);
-        // 	$this->Scan_model->absen_masuk($data);
-        // 	$this->session->set_flashdata('messageAlert', $this->messageAlert('success', 'absen masuk'));
-        // 	redirect('scan/index');
-        // }
     }
     function remove($id_kehadiran)
     {
